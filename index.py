@@ -13,7 +13,7 @@ def marcar_emails_como_lidos(usuario, senha, filtro_remetente):
     ids = data[0].split()
     ids.reverse()
     print(f'Resultado da conexão: {resultado}')
-    print(f'')
+    print(f'Trabalhando...')
     limite = 0
     contador = 0
     for id in ids:
@@ -42,9 +42,9 @@ def marcar_emails_como_lidos(usuario, senha, filtro_remetente):
 
 # Configurações
 ## É importante lembrar que, caso sua conta tenha verificação duas etapas, será necessário configurar uma senha para aplicativo na sessão autenticação por duas etapas. 
-usuario = 'fe.guimaraes972@gmail.com'
-senha = 'wgozvjjlcqfkxncf' # Senha do email ou senha para aplicativo
-filtro_remetente = 'jobalerts-noreply@linkedin.com' # Remetente alvo
+usuario = 'exemplo_de_email@gmail.com'
+senha = 'senha' # Senha do email ou senha para aplicativo
+filtro_remetente = 'jose@gmail.com' # Remetente alvo
 
 # Executa a função para marcar e-mails como lidos
 marcar_emails_como_lidos(usuario, senha, filtro_remetente)
